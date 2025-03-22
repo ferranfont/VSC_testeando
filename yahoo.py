@@ -16,3 +16,9 @@ plt.ylabel('Precio')
 plt.legend()
 plt.grid(True)
 plt.show()
+
+# Exportar a archivo Excel
+archivo_excel = "sp500_datos.xlsx"
+sp500.to_excel(archivo_excel)
+
+print(f"Datos exportados a '{archivo_excel}' correctamente ✅")
